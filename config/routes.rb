@@ -5,5 +5,6 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }
   root to: "home#index"
-  get '/product', to: 'product#index'
+  get '/products', to: 'product#index'
+  get "/fetch_products" => 'product#from_category', as: 'fetch_products'
 end

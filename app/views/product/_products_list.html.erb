@@ -1,0 +1,6 @@
+<% Product.all.each do |product| %>
+    <div class="product_box">
+      <%= link_to product.name, products_path %>
+    </div>
+<% end %>
+
